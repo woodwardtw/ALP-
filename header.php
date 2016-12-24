@@ -45,6 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								the_custom_logo();
 		} ?><!-- end custom logo -->
 		</div>	
+		<div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content',
 		'understrap' ); ?></a>
@@ -53,7 +54,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		     itemtype="http://schema.org/SiteNavigationElement">
 
 			<div class="<?php echo esc_html( $container ); ?>" id="content">
-
 				<div class="navbar-header">
 
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -75,9 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-				
 			</div> <!-- .container -->			
-
 		</nav><!-- .site-navigation -->
 		<div id="sub-nav-right">
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>  

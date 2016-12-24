@@ -12,7 +12,7 @@ body {
 .title-left{
 	float: left;
 	position: fixed;
-	z-index: 12000;
+	z-index: 100;
 	font-size: 2.3em;
 	color: #ffffff;
 	padding: 15px 20px;
@@ -45,7 +45,7 @@ body {
 }
 
 #main-menu {
-	margin-left: 140px;
+	margin-left: 180px;
 	text-transform: uppercase;
 }
 
@@ -101,6 +101,18 @@ body {
 	float: right;
 }
 
+.mobile-menu {
+	display:none;
+	}
+
+/*Special Stuff*/
+
+.hero-title {
+	font-size: 9vw;
+	color: #fff;
+	font-weight: 800;
+}	
+
 /* buttons */
 
 button {
@@ -152,11 +164,11 @@ button {
 	.title-left{
 	float: left;
 	position: fixed;
-	z-index: 12000;
+	z-index: 120;
 	font-size: 2.3em;
 	color: #ffffff;
 	padding: 15px 20px;
-	background-color: red;
+	background-color: #373a3c;
 	width: 100%;
 	}
 	#sub-nav-right {
@@ -164,6 +176,22 @@ button {
 	}
 	#fish-scales{
 	display: none;
+	}
+	#brand-short {
+	display:none;
+	}
+
+	.mobile-menu {
+		display: inline-block;
+		float: right;
+		height: 50px;
+		width: 80px;
+		z-index: 2000;
+		font-size: 3em;
+		color: #fff;
+		position: absolute;
+		right: 0;
+		top: 10px;
 	}
 
 }
