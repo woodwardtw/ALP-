@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								the_custom_logo();
 		} ?><!-- end custom logo -->
 		</div>	
-		<div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		<!-- <div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content',
 		'understrap' ); ?></a>
@@ -57,9 +57,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="navbar-header">
 
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-					<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
+					<button class="navbar-toggler hidden-sm-up fa fa-bars" type="button" data-toggle="collapse"
 					        data-target=".exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
-					        aria-label="Toggle navigation"></button>					
+					        aria-label="Toggle navigation">
+					        	
+					</button>					
 
 				</div>
 
@@ -81,7 +83,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>  
 			<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
 			<a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> | 
-			<a href="#">Other Link</a> | <a href="#">More</a>
-			</div>
+			<a href="#">Contact Us</a>
+		</div>
 
 	</div><!-- .wrapper-navbar end -->
