@@ -23,11 +23,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon" role="contentinfo">
 
-					<div class="site-info">
-					Advanced Learning Partnerships<br>
-					Street Address<br>
-					City, North Carolina
-						
+					<div class="site-info col-md-4">
+					<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>						
+					</div><!-- .site-info -->
+					<div class="site-info col-md-4">
+					<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>						
+					</div><!-- .site-info -->
+					<div class="site-info col-md-4">
+					<?php dynamic_sidebar( 'third-footer-widget-area' ); ?>						
+					</div><!-- .site-info -->
+					<div class="site-info col-md-4">
+					<?php dynamic_sidebar( 'fourth-footer-widget-area' ); ?>						
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
