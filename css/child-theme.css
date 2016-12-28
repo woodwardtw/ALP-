@@ -7569,7 +7569,7 @@ body {
   background-color: #fff; }
 
 .wrapper {
-  padding: 100px 0; }
+  padding: 20px 0; }
 
 .title-left {
   float: left;
@@ -7670,6 +7670,20 @@ body {
   font-size: 9vw;
   color: #fff;
   font-weight: 800; }
+
+/* SERVICES */
+.services-box {
+  border: 1px solid #efefef;
+  padding: 10px 0; }
+
+/*FOOTER*/
+.footer {
+  background-color: #373a3c; }
+
+.site-info {
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px; }
 
 /* buttons */
 button {
