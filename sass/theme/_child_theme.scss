@@ -17,7 +17,7 @@ body {
 	font-size: 2.3em;
 	color: #ffffff;
 	padding: 15px 20px;
-	background-color: #373a3c;
+	background-color: $dark-gray;
 	width: 310px;
 }
 
@@ -89,6 +89,8 @@ body {
   	vertical-align: middle;
   	display: inline-block;
   	font-size: 1.2em;
+  	width: 90%;
+  	height: auto;
 }
 
 #navbar-custom li a:hover{
@@ -125,11 +127,52 @@ body {
 	float:right;
 }
 
+/*district partners stuff*/
+
+.district-pad {
+	margin: 10px;
+	border: 1px solid #efefef;
+	height: 250px;
+	padding: 0 10px 0 10px;	
+}
+
+.district-title {
+	background-color: $dark-gray;
+	color: #fff;
+	padding: 2px 5px;
+	font-size: 1.5em;
+	margin: 0 -10px 10px -10px;
+	height: 60px;
+}
+
+#states {
+	width: 220px;
+	border: 2px solid #000;
+	border-radius: 0;
+}
+
+.states li, .states li a{
+	color: #000;
+	text-align: left;
+	font-size: 1.1em;	
+	height: auto;
+}
+
+.states li:hover, .states li a:hover {
+	color: #fff;
+	background-color: $dark-gray;
+	text-decoration: none;
+}
+
+#show, .selected {
+	display: inline-block;	
+}
+
 
 /*Special Stuff*/
 
 .hero-title {
-	font-size: 9vw;
+	font-size: 6vw;
 	color: #fff;
 	font-weight: 800;
 }	
@@ -142,9 +185,70 @@ body {
 	padding: 10px 0;
 }
 
+/*BIO PAGE*/
+.bio-title .fl-heading-text{
+	padding: 8px 7px;
+	border: 2px solid $dark-teal;
+	width: 100%;
+	display: block;
+}
+
+.bio-title .fl-heading-text{
+	position: relative;
+    z-index: 1;
+}
+
+.bio-title a {
+	text-decoration: none;
+}
+
+.bio-title .fl-heading-text:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bio-title .fl-heading-text:after {	
+	color: #fff;
+	padding: 5px 0 0 10px;
+	content:"";
+	margin-top: 5px;
+	color: $dark-teal;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    z-index: -1;
+    transition: transform 0.3s;
+    background: #424242;
+    text-decoration: none;    
+}
+
+.bio-title .fl-heading-text:hover::after {
+    transform: scaleY(1);
+}
+
+.bio-header {
+	font-weight: 200;
+	color: $dark-teal;
+	font-size: 3.5em;
+}
+
+.fl-photo-crop-circle img {
+	border: 2px solid $dark-gray;	
+}
+
+.bio-pic img {
+	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
 /*FOOTER*/
 .footer {
-	background-color: #373a3c;	
+	background-color: $dark-gray;	
 }
 
 .site-info {
@@ -228,6 +332,41 @@ button {
   top: 0;
 }
 
+/* ACCORDION */
+
+   .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #212121;
+        background-color: #FAFAFA;
+        border-color: #EEEEEE;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+    .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .more-less {
+        float: right;
+        color: #212121;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #EEEEEE;
+    }
+
 @include respond-to(small){
 	.title-left{
 	float: left;
@@ -236,7 +375,7 @@ button {
 	font-size: 2.3em;
 	color: #ffffff;
 	padding: 15px 20px;
-	background-color: #373a3c;
+	background-color: $dark-gray;
 	width: 100%;
 	}
 	#sub-nav-right {
