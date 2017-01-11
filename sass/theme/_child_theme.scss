@@ -245,6 +245,38 @@ body {
     filter: grayscale(100%);
 }
 
+/* Innovative Learning Page */
+
+.innovate-title {
+	border: 2px solid $dark-teal;
+	padding: 5px 8px;
+	margin: 5px;
+}
+
+.innovate-title:hover, .innovate-title a:hover {
+	background-color: $dark-teal;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*List Category*/
+.listing-item {
+	display: block;
+	margin-bottom: 5px;
+	border: 1px solid $dark-teal;
+	padding: 5px 7px;
+}
+
+.listing-item .title {
+	display: block;
+	font-size: 1.2em
+}
+
+.listing-item .title::after {
+	content:"  >>";
+	color: $dark-teal;
+}
 
 /*FOOTER*/
 .footer {

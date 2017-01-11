@@ -7765,6 +7765,32 @@ body {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
+/* Innovative Learning Page */
+.innovate-title {
+  border: 2px solid #45b8ac;
+  padding: 5px 8px;
+  margin: 5px; }
+
+.innovate-title:hover, .innovate-title a:hover {
+  background-color: #45b8ac;
+  color: #fff;
+  text-decoration: none; }
+
+/*List Category*/
+.listing-item {
+  display: block;
+  margin-bottom: 5px;
+  border: 1px solid #45b8ac;
+  padding: 5px 7px; }
+
+.listing-item .title {
+  display: block;
+  font-size: 1.2em; }
+
+.listing-item .title::after {
+  content: "  >>";
+  color: #45b8ac; }
+
 /*FOOTER*/
 .footer {
   background-color: #373a3c; }
